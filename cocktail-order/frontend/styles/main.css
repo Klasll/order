@@ -41,7 +41,7 @@ header {
 
 .cocktail h3 {
     position: absolute;
-    bottom: 40px; /* Move the text much higher on the picture */
+    bottom: 60px; /* Move the text much higher on the picture */
     left: 0;
     width: 100%;
     margin: 0;
@@ -79,7 +79,7 @@ header {
     }
     .cocktail h3 {
         font-size: 1rem;
-        bottom: 40px; /* Move higher for mobile as well */
+        bottom: 60px; /* Move higher for mobile as well */
     }
 }
 
