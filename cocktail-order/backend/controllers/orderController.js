@@ -38,6 +38,14 @@ class OrderController {
     }
 }
 
-module.exports = OrderController;
-orderHandler.createOrder;
-orderHandler.getOrders;
+module.exports = {
+    OrderController,
+    createOrder: (req, res) => {
+        // Example: handle order creation
+        res.json({ message: 'Order created!' });
+    },
+    getOrders: (req, res) => {
+        // Example: return a list of orders
+        res.json({ orders: [] });
+    }
+};
