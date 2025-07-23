@@ -74,7 +74,7 @@ header {
         max-width: 98vw;
     }
     .cocktail img {
-        max-height: 180px; /* Increased for mobile as well */
+        max-height: 250px; /* Increased for mobile as well */
     }
     .cocktail h3 {
         font-size: 1rem;
