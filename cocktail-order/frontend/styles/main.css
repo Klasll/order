@@ -36,6 +36,7 @@ header {
     display: block;
     max-height: 600px; /* Much higher for desktop */
     object-fit: cover;
+    border-radius: 16px; /* Add this line for fully rounded corners */
 }
 
 .cocktail h3 {
