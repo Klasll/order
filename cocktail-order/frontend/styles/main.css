@@ -79,7 +79,7 @@ header {
     }
     .cocktail h3 {
         font-size: 1rem;
-        bottom: 120px; /* Move higher for mobile as well */
+        bottom: 80px; /* Move higher for mobile as well */
     }
 }
 
