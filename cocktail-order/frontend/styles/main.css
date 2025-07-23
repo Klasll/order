@@ -1,54 +1,90 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
 }
 
 header {
-    background-color: #343a40;
-    color: white;
-    padding: 10px 20px;
     text-align: center;
+    padding: 1rem 0;
 }
 
-h1 {
-    margin: 20px 0;
+#cocktail-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1rem;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+.cocktail {
+    position: relative;
+    width: 90vw;
+    max-width: 320px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.cocktail-card {
-    border: 1px solid #dee2e6;
-    border-radius: 5px;
-    margin: 15px 0;
-    padding: 15px;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.cocktail img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 180px;
+    object-fit: cover;
 }
 
-.cocktail-card img {
-    max-width: 100%;
-    border-radius: 5px;
+.cocktail h3 {
+    position: absolute;
+    bottom: 48px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem 0;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-.cocktail-card h2 {
-    margin: 10px 0;
-}
-
-.button {
-    background-color: #007bff;
-    color: white;
+.order-button {
+    margin: 1rem 0 0.5rem 0;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 8px;
+    background: #2ecc71;
+    color: #fff;
     cursor: pointer;
+    transition: background 0.2s;
 }
 
-.button:hover {
-    background-color: #0056b3;
+.order-button:hover {
+    background: #27ae60;
 }
+
+@media (max-width: 600px) {
+    .cocktail {
+        max-width: 98vw;
+    }
+    .cocktail img {
+        max-height: 120px;
+    }
+    .cocktail h3 {
+        font-size: 1rem;
+        bottom: 36px;
+    }
+}
+
+/* Example for one cocktail card */
+<div class="cocktail" id="mojito">
+    <img src="assets/cocktails/mojito.png" alt="Mojito">
+    <h3>Mojito</h3>
+    <button class="order-button">Order Now</button>
+</div>
