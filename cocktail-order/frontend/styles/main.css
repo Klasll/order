@@ -34,7 +34,7 @@ header {
     width: 100%;
     height: auto;
     display: block;
-    max-height: 260px; /* Increased height */
+    max-height: 400px; /* Increased height for desktop */
     object-fit: cover;
 }
 
@@ -74,7 +74,7 @@ header {
         max-width: 98vw;
     }
     .cocktail img {
-        max-height: 600px; /* Increased for mobile as well */
+        max-height: 300px; /* Increased height for mobile */
     }
     .cocktail h3 {
         font-size: 1rem;
