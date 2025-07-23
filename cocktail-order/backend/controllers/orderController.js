@@ -1,5 +1,3 @@
-const orderHandler = require('./orderHandler');
-
 class OrderController {
     constructor(orderService) {
         this.orderService = orderService;
@@ -39,7 +37,6 @@ class OrderController {
 }
 
 module.exports = {
-    OrderController,
     createOrder: (req, res) => {
         // Example: handle order creation
         res.json({ message: 'Order created!' });
