@@ -1,3 +1,5 @@
+const orderHandler = require('./orderHandler');
+
 class OrderController {
     constructor(orderService) {
         this.orderService = orderService;
@@ -36,4 +38,6 @@ class OrderController {
     }
 }
 
-export default OrderController;
+module.exports = OrderController;
+orderHandler.createOrder;
+orderHandler.getOrders;
